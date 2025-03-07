@@ -5,6 +5,10 @@
     @apply w-full;
   }
 
+  body {
+    @apply !place-items-start m-0 p-0;
+  }
+
   .container {
     @apply mx-auto;
   }
@@ -14,15 +18,15 @@
   }
 
   .btn {
-    @apply font-semibold text-sm !bg-fuchsia-600 text-slate-100 !px-4 !py-2 rounded-md hover:text-fuchsia-600 hover:!bg-white !transition-all !duration-300 !ease-in;
+    @apply self-center font-semibold text-sm !bg-fuchsia-600 text-slate-100 !px-4 !py-2 rounded-md hover:text-fuchsia-600 hover:!bg-white !transition-all !duration-300 !ease-in;
   }
 
   .btn-outline {
-    @apply font-semibold text-lg border border-fuchsia-600 !text-fuchsia-600 px-6 py-2 rounded-md hover:!text-white hover:bg-fuchsia-600 transition-all duration-300 ease-in;
+    @apply font-semibold text-lg border border-fuchsia-600 dark:border-fuchsia-400 !text-fuchsia-600 dark:!text-fuchsia-200 px-6 py-2 rounded-md hover:!text-fuchsia-600 hover:bg-white transition-all duration-300 ease-in;
   }
 
   .card {
-    @apply flex flex-col rounded-xl bg-white p-8 my-6 border border-slate-200 shadow-md hover:shadow-xl overflow-hidden;
+    @apply flex flex-col rounded-xl bg-white dark:bg-slate-700 dark:text-slate-50 p-8 my-6 border border-slate-200 dark:border-slate-500 shadow-md hover:shadow-xl overflow-hidden;
   }
 
   .h-card {
